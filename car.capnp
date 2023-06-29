@@ -175,6 +175,7 @@ struct CarState {
   regenBraking @45 :Bool; # this is user pedal only
   parkingBrake @39 :Bool;
   brakeHoldActive @38 :Bool;
+  brakeLights @19 :Bool;
 
   # steering wheel
   steeringAngleDeg @7 :Float32;
@@ -271,7 +272,6 @@ struct CarState {
 
   # deprecated
   errorsDEPRECATED @0 :List(CarEvent.EventName);
-  brakeLightsDEPRECATED @19 :Bool;
   steeringRateLimitedDEPRECATED @29 :Bool;
   canMonoTimesDEPRECATED @12: List(UInt64);
 }
